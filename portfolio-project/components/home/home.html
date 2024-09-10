@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add Bookmark</h1>
+    <!-- Bookmarks -->
+    <div class="container" id="bookmarks-container">
+
+    </div>
+    <!-- Model -->
+     <div class="model-container" id="model">
+        <div class="model">
+            <i class="fas fa-times close class-model" id="class-model"></i>
+            <div class="model-header">
+                <h3>Add Bookmark</h3>
+            </div>
+            <div class="model-content">
+                <form id="bookmark-form">
+                    <!-- Website-name -->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website-Name</label>
+                        <input type="text"  class="form-input" id="Website-name">
+                    </div>
+                    <!-- Website-URL -->
+                     <div class="form-group">
+                        <label for="website-url" class="form-label">Website-URL</label>
+                        <input type="text" class="form-input" id="website-url">
+                    </div>
+                    <button type="submit">
+                        Save
+                    </button>
+                </form>
+            </div>
+        </div>
+     </div>
+     <!-- Script -->
+      <script src="index.js"></script>
+</body>
+</html>
