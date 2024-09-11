@@ -45,3 +45,34 @@ function validate(nameValue, urlValue) {
     //If valid return true.
     return true
 };
+
+function buildBookMarkDOM() {
+    bookmarkContainer.textContent= ""
+};
+
+bookmarks.forEach(bookmarks) => {
+    const {name, url} = bookmark
+    //console.log(name, url)
+
+    const item = document.createElement("div")
+    item.classList.add("item")
+
+    const closeIcon = document.createElement("i")
+    closeIcon.classList.add("fas", "fa-times")
+    closeIcon.setAttribute("title", "Delete Bookmark")
+    closeIcon.setAttribute("onclick", `deleteBookmark("${url}")`)
+
+    const linkInfo = document.createElement("div")
+    linkInfo.classList.add("name")
+
+    const favicon = document.createElement("img")
+    favicon.setAttribute(
+        "src",url
+    )
+    favicon.setAttribute("alt", "favicon")
+
+    const link = document.createElement("a")
+    link.setAttribute("href", `${url}`)
+    link.setAttribute("target", "_blank")
+    link.textContent = name
+};
