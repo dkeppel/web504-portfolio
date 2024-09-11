@@ -48,9 +48,9 @@ function validate(nameValue, urlValue) {
 
 function buildBookMarkDOM() {
     bookmarkContainer.textContent= ""
-};
 
-bookmarks.forEach(bookmarks) => {
+
+bookmarks.forEach((bookmarks) => {
     const {name, url} = bookmark
     //console.log(name, url)
 
@@ -75,4 +75,5 @@ bookmarks.forEach(bookmarks) => {
     link.setAttribute("href", `${url}`)
     link.setAttribute("target", "_blank")
     link.textContent = name
+})
 };
